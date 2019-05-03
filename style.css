@@ -1,0 +1,29 @@
+@import 'components/sidebar/sidebar.css';
+@import 'components/footer/footer.css';
+
+.base {
+    background-color: #06080E;
+}
+
+.topnav {
+    background-color: #363C4B;
+    display:  block;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.active {
+    color: yellow;
+}
+
+.content {
+    display: flex;
+}
