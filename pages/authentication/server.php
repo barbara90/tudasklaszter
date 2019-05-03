@@ -21,14 +21,14 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-    if (empty($lastname)) { array_push($errors, "A vezetéknév megadása kötelező!"); }
+  if (empty($lastname)) { array_push($errors, "A vezetéknév megadása kötelező!"); }
   if (empty($firstname)) { array_push($errors, "A keresztnév megadása kötelező!"); }
   if (empty($username)) { array_push($errors, "A felhasználónév megadása kötelező!"); }
   if (empty($email)) { array_push($errors, "Az email cím megadása kötelező!"); }
   if (empty($password_1)) { array_push($errors, "A jelszó megadása kötelező!"); }
   if ($password_1 != $password_2) {
 	array_push($errors, "A két jelszó nem egyezik!");
-  }
+}
 
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
@@ -57,7 +57,7 @@ if (isset($_POST['reg_user'])) {
     $_SESSION['username'] = $firstname;
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Bejelentkezett";
-  	header('location: index.tpl.php');
+  	header('location: /');
   }
 }
 
@@ -78,12 +78,12 @@ if (isset($_POST['login_user'])) {
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
-    $_SESSION['username'] = $lastname;
-    $_SESSION['username'] = $firstname;
-  	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "Bejelentkezett";
-  	  header('location: index.tpl.php');
-  	}else {
+      $_SESSION['username'] = $lastname;
+      $_SESSION['username'] = $firstname;
+      $_SESSION['username'] = $username;
+      $_SESSION['success'] = "Bejelentkezett";
+  	  header('location: /');
+  	} else {
   		array_push($errors, "Helytelen felhasználónév - jelszó páros!");
   	}
   }

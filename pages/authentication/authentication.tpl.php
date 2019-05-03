@@ -1,15 +1,8 @@
-<?php 
-  session_start();
-
+<?php
   if (!isset($_SESSION['username'])) {
       $_SESSION['msg'] = "Kérem jelentkezzen be!";
       include("login.tpl.php");
       include("register.tpl.php");
-  } else {
-  }
-  if (isset($_GET['logout'])) {
-  	  session_destroy();
-  	  unset($_SESSION['username']);
   }
 ?>
 <div class="content">

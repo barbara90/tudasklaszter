@@ -14,17 +14,14 @@ if(isset($_POST['but_upload'])){
   $extensions_arr = array("jpg","jpeg","png","gif");
 
   // Check extension
-  if( in_array($imageFileType,$extensions_arr) ){
- 
+  if( in_array($imageFileType, $extensions_arr) ){
      // Insert record
      $query = "insert into images(name) values('".$name."')";
      mysqli_query($con,$query);
   
      // Upload file
      move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name);
-
   }
- 
 }
 ?>
 
@@ -34,12 +31,11 @@ if(isset($_POST['but_upload'])){
 </form>
 
 <?php
-$sql = "select name from images where id=1"; // TODO: aktuális kép id-ja
-$result = mysqli_query($con,$sql);
-$row = mysqli_fetch_array($result);
-
-$image = $row['name'];
-$image_src = "media/".$image;
-
+  $sql = "SELECT name FROM images";
+  $result = mysqli_query($con, $sql);
+  $json = mysqli_fetch_all ($result, MYSQLI_ASSOC);
+  foreach ($json as &$value) {
+    $image_src = "media/" . $value['name'];
+    print("<img src=" . $image_src . ">");
+  }
 ?>
-<img src='<?php echo $image_src;  ?>' >

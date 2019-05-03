@@ -2,7 +2,7 @@
   <div class="header">
   	<h2>Bejelentkezés</h2>
   </div>
-  <form method="post" action="login.tpl.php">
+  <form method="post" action="">
       <?php include('errors.tpl.php'); ?>
     <div class="input-group">
   		<label>Vezetéknév</label>

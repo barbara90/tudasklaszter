@@ -6,10 +6,16 @@ html {
 
 .content {
     flex: 1 0 auto;
+    width: 800px;
+    margin: 0 auto;
 }
 
 footer {
     flex-shrink: 0;
+}
+
+.footer {
+    padding: 20px;
 }
 
 .base {
@@ -17,6 +23,7 @@ footer {
     flex-direction: column;
     height: 100vh;
     background-color: lightgray;
+    margin: 0;
 }
 
 .topnav {
@@ -27,6 +34,13 @@ footer {
     display: flex;
     list-style-type: none;
     background-color: #4D6969;
+    margin: 0;
+    padding: 16px 0;
+    align-items: center;
+}
+
+.menu img {
+    padding: 0 16px;
 }
 
 .menu a {
@@ -36,4 +50,8 @@ footer {
 
 .menu a.active {
     color: lightgrey;
+}
+
+.menu li {
+    padding-right: 20px;
 }
