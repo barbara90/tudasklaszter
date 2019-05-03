@@ -1,4 +1,6 @@
 @import 'components/footer/footer.css';
+@import 'pages/authentication/authentication.css';
+
 
 html {
     height: 100%;
