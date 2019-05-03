@@ -19,7 +19,6 @@
     </nav>
 
     <div class="content">
-        <?php include("components/sidebar/sidebar.tpl.php"); ?>
 
         <div id="body">
             <?php include("pages/{$actual_page['file']}/{$actual_page['file']}.tpl.php"); ?>

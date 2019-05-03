@@ -3,6 +3,7 @@
 $pages = array(
     '/' => array('file' => 'homePage', 'link' => 'Kezdőlap'),
     'researches' => array('file' => 'researches', 'link' => 'Kutatások'),
+    'gallery' => array('file' => 'gallery', 'link' => 'Galéria'),
     'authentication' => array('file' => 'authentication', 'link' => 'Bejelentkezés/Regisztráció'),
 );
 

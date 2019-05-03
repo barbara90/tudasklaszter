@@ -1,20 +1,15 @@
 <?php 
-  session_start(); 
-
-  switch($_REQUEST['page']){
-        case "authentication":
-            include("login.php"); break;
-        case "registration":
-            include("registration.php"); break;
-
-    }
+  session_start();
 
   if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "Kérem jelentkezzen be!";
+      $_SESSION['msg'] = "Kérem jelentkezzen be!";
+      include("login.tpl.php");
+      include("register.tpl.php");
+  } else {
   }
   if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
+  	  session_destroy();
+  	  unset($_SESSION['username']);
   }
 ?>
 <div class="content">

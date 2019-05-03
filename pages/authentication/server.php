@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_reset();
 
 // initializing variables
 $username = "";
@@ -57,7 +57,7 @@ if (isset($_POST['reg_user'])) {
     $_SESSION['username'] = $firstname;
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Bejelentkezett";
-  	header('location: index.php');
+  	header('location: index.tpl.php');
   }
 }
 
@@ -82,7 +82,7 @@ if (isset($_POST['login_user'])) {
     $_SESSION['username'] = $firstname;
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Bejelentkezett";
-  	  header('location: index.php');
+  	  header('location: index.tpl.php');
   	}else {
   		array_push($errors, "Helytelen felhasználónév - jelszó páros!");
   	}

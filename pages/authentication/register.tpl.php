@@ -2,8 +2,8 @@
   <div class="header">
   	<h2>Regisztráció</h2>
   </div>
-  <form method="post" action="authentication">
-    <?php include('errors.php'); ?>
+  <form method="post" action="register.tpl.php">
+    <?php include('errors.tpl.php'); ?>
     <div class="input-group">
   		<label>Vezetéknév</label>
   		<input type="text" name="lastname" >
@@ -31,7 +31,4 @@
   	<div class="input-group">
   	  <button type="submit" class="btn" name="reg_user">Regisztráció</button>
   	</div>
-  	<p>
-  		Már tagunk? <a href="login.php">Bejelentkezés</a>
-  	</p>
   </form>
