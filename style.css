@@ -1,18 +1,33 @@
 @import 'components/sidebar/sidebar.css';
 @import 'components/footer/footer.css';
 
+html {
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
 .base {
-    background-color: #06080E;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: lightgray;
 }
 
 .topnav {
-    background-color: #363C4B;
     display:  block;
 }
 
 .menu {
     display: flex;
     list-style-type: none;
+    background-color: #4D6969;
 }
 
 .menu a {
@@ -21,9 +36,5 @@
 }
 
 .menu a.active {
-    color: yellow;
-}
-
-.content {
-    display: flex;
+    color: lightgrey;
 }

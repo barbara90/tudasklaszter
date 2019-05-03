@@ -1,4 +1,7 @@
 .sidebar {
     background: #4D6969;
     width: 15%;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
 }
