@@ -1,3 +1,3 @@
 <div class="footer">
-  <small>&copy; Copyright 2018, Example Corporation</small>
+  <small>&copy; Copyright 2019, Example Corporation</small>
 </div>
