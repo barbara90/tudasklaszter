@@ -1,0 +1,5 @@
+CREATE TABLE `menu` (
+    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `menu` VARCHAR(255),
+    `route` VARCHAR(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

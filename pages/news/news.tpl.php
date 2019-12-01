@@ -26,7 +26,7 @@ if(isset($add_n)){
    }
 }else{
 ?>
-<form name="form1" method="post" action="<? echo $PHP_SELF; ?>">
+<form name="form1" method="post" action="/">
   <table width="50%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td width="50%">Név</td>

@@ -21,11 +21,11 @@
   	  <input type="email" name="email" value="<?php echo $email; ?>">
   	</div>
   	<div class="input-group">
-  	  <label>Password</label>
+  	  <label>Jelszó</label>
   	  <input type="password" name="password_1">
   	</div>
   	<div class="input-group">
-  	  <label>Confirm password</label>
+  	  <label>Jelszó megerősítése</label>
   	  <input type="password" name="password_2">
   	</div>
   	<div class="input-group">
