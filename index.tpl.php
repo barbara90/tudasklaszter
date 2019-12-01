@@ -20,10 +20,13 @@
 
     <div class="content">
 
-        <div id="body">
+        <div class="body">
             <?php include("pages/{$actual_page['file']}/{$actual_page['file']}.tpl.php"); ?>
         </div>
-
+        <div class="body__img">
+          <img src="/media/ismetles-a-tudas-anyja-teszteles-a-tudas-apja.jpg" height="150" width="250">
+          <img src="/media/377830-636190612926411830-16x9.jpg" height="150" width="250">
+        </div>
         <form method="get" action="http://www.google.com/search"> 
              <div style="border:1px solid black;padding:4px;width:20em;">
                 <table border="0" cellpadding="0"> <tr><td> 

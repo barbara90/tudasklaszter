@@ -16,4 +16,4 @@
   Frontcontroller mintát alkalmazva generálódnak dinamikusan az oldalak, ezt az index.php, index.tpl.php, illetve a config.inc.php fájlok segítségével valósítottam meg.
 
 ##Repository
-  https://github.com/barbara90/tudasklaszter 
+  https://github.com/barbara90/tudasklaszter
