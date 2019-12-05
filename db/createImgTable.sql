@@ -1,5 +1,7 @@
+DROP TABLE IF EXISTS images;
+
 CREATE TABLE `images` (
-  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `name` varchar(200) NOT NULL,
-  `image` longtext NOT NULL
+    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `name` VARCHAR(255) NOT NULL,
+    `image` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

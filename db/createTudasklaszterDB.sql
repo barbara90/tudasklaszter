@@ -1,1 +1,5 @@
-CREATE DATABASE `tudasklaszter`;
+DROP DATABASE IF EXISTS tudasklaszter;
+
+CREATE DATABASE tudasklaszter;
+
+USE tudasklaszter;

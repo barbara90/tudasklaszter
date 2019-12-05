@@ -1,6 +1,6 @@
 @import 'components/footer/footer.css';
 @import 'pages/authentication/authentication.css';
-
+@import './pages/gallery/gallery.css';
 
 html {
     height: 100%;

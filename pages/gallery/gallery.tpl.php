@@ -25,6 +25,20 @@ if(isset($_POST['but_upload'])){
 }
 ?>
 
+<script type='text/javascript'>
+  $( document ).ready(function() {
+    console.log($('.body img'));
+
+    $('.body img').each(function () {
+      $( this ).hover(
+        function() { $(this).addClass("hover"); },
+        function() { $(this).removeClass("hover"); }
+      );
+    });
+});
+  
+</script>
+
 <form method="post" action="" enctype='multipart/form-data'>
   <input type='file' name='file' />
   <input type='submit' value='Mentés' name='but_upload'>

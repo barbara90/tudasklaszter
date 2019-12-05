@@ -2,3 +2,7 @@ a.home__text {
     text-decoration: none;
     color: white;
 }
+
+img.hover {
+    border: 10px solid red;
+}

@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Tudásklaszter</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="pages/gallery/gallery.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="base">
     <nav id="topnav">

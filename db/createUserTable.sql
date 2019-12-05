@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS images;
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `firstname` varchar(100) NOT NULL,

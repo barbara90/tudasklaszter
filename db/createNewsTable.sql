@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS images;
+
 CREATE TABLE news (
    id smallint(5) unsigned NOT NULL auto_increment,
    headline text NOT NULL,
