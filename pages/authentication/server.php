@@ -20,7 +20,7 @@ if (isset($_POST['reg_user'])) {
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
 
   // form validation: ensure that the form is correctly filled ...
-  // by adding (array_push()) corresponding error unto $errors array
+  // by adding (array_push()) corresponding error into $errors array
   if (empty($lastname)) { array_push($errors, "A vezetéknév megadása kötelező!"); }
   if (empty($firstname)) { array_push($errors, "A keresztnév megadása kötelező!"); }
   if (empty($username)) { array_push($errors, "A felhasználónév megadása kötelező!"); }

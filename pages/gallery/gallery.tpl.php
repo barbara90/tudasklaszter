@@ -27,6 +27,9 @@ if(isset($_POST['but_upload'])){
 
 <script type='text/javascript'>
   $( document ).ready(function() {
+    
+    // Jquery adding color during hover
+
     console.log($('.body img'));
 
     $('.body img').each(function () {

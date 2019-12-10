@@ -1,6 +1,6 @@
 <?php
   if (!isset($_SESSION['username'])) {
-      $_SESSION['msg'] = "Kérem jelentkezzen be!";
+      $_SESSION['msg'] = "Ön jelenleg Látogató, kérem jelentkezzen be!";
       include("login.tpl.php");
       include("register.tpl.php");
   }
