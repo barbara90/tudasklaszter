@@ -1,4 +1,5 @@
 # tudasklaszter
+//Egyetemi beadandó
 
 ##Setup
   1. Az adatbázis létrehozáshoz szükséges scriptek a db mappában lévő .sql kiterjesztésűek
